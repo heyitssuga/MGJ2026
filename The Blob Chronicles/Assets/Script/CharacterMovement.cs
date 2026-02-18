@@ -34,6 +34,8 @@ public class CharacterMovement : MonoBehaviour
         playerCollider = GetComponent<BoxCollider2D>();
         colliderSizeS = playerCollider.size;
         colliderOffsetS = playerCollider.offset;
+        colliderSizeC = new Vector2(2.03f, 1.06f);
+        colliderOffsetC = new Vector2(0f, -1.98f);
     }
 
     void Update()
@@ -46,6 +48,17 @@ public class CharacterMovement : MonoBehaviour
         RaycastHit2D hit =  Physics2D.Raycast(transform.position, Vector2.down, 1.8f, groundLayer);
         
         Debug.DrawRay(transform.position, Vector2.down * 1.8f, Color.red);
+
+        if (crouching)
+        {
+            playerCollider.size =  colliderSizeC;
+            playerCollider.offset = colliderOffsetC;
+        }
+        else
+        {
+            playerCollider.size =  colliderSizeS;
+            playerCollider.offset = colliderOffsetS;
+        }
         
 
         if (hit && rb.linearVelocityY == 0)
@@ -56,6 +69,12 @@ public class CharacterMovement : MonoBehaviour
         {
             jumping = true;
         }
+
+        if (movement.y > 0 && crouching)
+        {
+            crouching = false;
+        }
+        
         if (movement.y > 0 && !jumping && !crouching)
         {
             rb.AddForceY(450);
@@ -65,10 +84,6 @@ public class CharacterMovement : MonoBehaviour
         {
             crouching = true;
         }
-        // else
-        // {
-        //     crouching = false;
-        // }
         
         transform.Translate(new Vector3(movement.x, 0, 0) *  Speed * Time.deltaTime);
         
