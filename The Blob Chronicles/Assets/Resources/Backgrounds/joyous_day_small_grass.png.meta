@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: bdd777a41c68a83438e30550b64d752a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2590353610463202220
+    second: joyous_day_small_grass_0
+  - first:
+      213: 1900507843573882834
+    second: joyous_day_small_grass_1
+  - first:
+      213: 500893924866641257
+    second: joyous_day_small_grass_2
+  - first:
+      213: 2707879314167031878
+    second: joyous_day_small_grass_3
+  - first:
+      213: 6538512266291571309
+    second: joyous_day_small_grass_4
+  - first:
+      213: -2329631733454878945
+    second: joyous_day_small_grass_5
+  - first:
+      213: 4300306002116678506
+    second: joyous_day_small_grass_6
+  - first:
+      213: 4490560983884515826
+    second: joyous_day_small_grass_7
+  - first:
+      213: -4903401942742567996
+    second: joyous_day_small_grass_8
+  - first:
+      213: 4398832927768372622
+    second: joyous_day_small_grass_9
+  - first:
+      213: -7503253825278518101
+    second: joyous_day_small_grass_10
+  - first:
+      213: -9067540625635288496
+    second: joyous_day_small_grass_11
+  - first:
+      213: -8631478628923161665
+    second: joyous_day_small_grass_12
+  - first:
+      213: -1497724655548036524
+    second: joyous_day_small_grass_13
+  - first:
+      213: 193341909346442
+    second: joyous_day_small_grass_14
+  - first:
+      213: -3775334117707608269
+    second: joyous_day_small_grass_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: joyous_day_small_grass_0
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 56
+        width: 160
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab4f4a62e8c2f320800000000000000
+      internalID: 2590353610463202220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_1
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 61
+        width: 88
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df901d70d5ff5a10800000000000000
+      internalID: 1900507843573882834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_2
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 28
+        width: 50
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96dc3ddee5883f600800000000000000
+      internalID: 500893924866641257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_3
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 48
+        width: 58
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648ed87a3e1549520800000000000000
+      internalID: 2707879314167031878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_4
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 47
+        width: 54
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ae7df73467dba50800000000000000
+      internalID: 6538512266291571309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_5
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 151
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17c1f5084c7bafd0800000000000000
+      internalID: -2329631733454878945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 41
+        width: 68
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6315a16681cdab30800000000000000
+      internalID: 4300306002116678506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_7
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 17
+        width: 47
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f94aae3c6da15e30800000000000000
+      internalID: 4490560983884515826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_8
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 0
+        width: 66
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c37ed399ed93fbb0800000000000000
+      internalID: -4903401942742567996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_9
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 2
+        width: 77
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85ece5ed3bcb0d30800000000000000
+      internalID: 4398832927768372622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_10
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 19
+        width: 21
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bacdeac56661fd790800000000000000
+      internalID: -7503253825278518101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_11
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 23
+        width: 79
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ad596c7df992280800000000000000
+      internalID: -9067540625635288496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_12
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 44
+        width: 39
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3c8a42be3d63880800000000000000
+      internalID: -8631478628923161665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_13
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 26
+        width: 62
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a07be6c53073be0800000000000000
+      internalID: -1497724655548036524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_14
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 7
+        width: 61
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88a3dbe7dfa00000800000000000000
+      internalID: 193341909346442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joyous_day_small_grass_15
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 14
+        width: 19
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f00ad5f915b9bc0800000000000000
+      internalID: -3775334117707608269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      joyous_day_small_grass_0: 2590353610463202220
+      joyous_day_small_grass_1: 1900507843573882834
+      joyous_day_small_grass_10: -7503253825278518101
+      joyous_day_small_grass_11: -9067540625635288496
+      joyous_day_small_grass_12: -8631478628923161665
+      joyous_day_small_grass_13: -1497724655548036524
+      joyous_day_small_grass_14: 193341909346442
+      joyous_day_small_grass_15: -3775334117707608269
+      joyous_day_small_grass_2: 500893924866641257
+      joyous_day_small_grass_3: 2707879314167031878
+      joyous_day_small_grass_4: 6538512266291571309
+      joyous_day_small_grass_5: -2329631733454878945
+      joyous_day_small_grass_6: 4300306002116678506
+      joyous_day_small_grass_7: 4490560983884515826
+      joyous_day_small_grass_8: -4903401942742567996
+      joyous_day_small_grass_9: 4398832927768372622
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

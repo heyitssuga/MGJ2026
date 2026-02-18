@@ -43,10 +43,12 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        RaycastHit2D hit =  Physics2D.Raycast(transform.position, Vector2.down, 1.5f, groundLayer);
+        RaycastHit2D hit =  Physics2D.Raycast(transform.position, Vector2.down, 1.8f, groundLayer);
+        
+        Debug.DrawRay(transform.position, Vector2.down * 1.8f, Color.red);
         
 
-        if (hit)
+        if (hit && rb.linearVelocityY == 0)
         {
             jumping = false;
         }
@@ -56,7 +58,7 @@ public class CharacterMovement : MonoBehaviour
         }
         if (movement.y > 0 && !jumping && !crouching)
         {
-            rb.AddForceY(150);
+            rb.AddForceY(450);
         }
 
         if (movement.y < 0 && !jumping)
@@ -70,14 +72,14 @@ public class CharacterMovement : MonoBehaviour
         
         transform.Translate(new Vector3(movement.x, 0, 0) *  Speed * Time.deltaTime);
         
-        if (movement.x > 0 && facingRight)
-        {
-            facingRight = false;
-            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
-        }
-        else if (movement.x < 0 && !facingRight)
+        if (movement.x < 0 && !facingRight)
         {
             facingRight = true;
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
+        }
+        else if (movement.x > 0 && facingRight)
+        {
+            facingRight = false;
             transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
         }
 
