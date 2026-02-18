@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -13,9 +14,9 @@ public class CharacterMovement : MonoBehaviour
 
     private Vector2 movement, colliderSizeS, colliderOffsetS, colliderSizeC, colliderOffsetC;
 
-    public bool jumping, facingRight, crouching;
+    public bool jumping, facingRight, crouching, moving;
 
-    private LayerMask groundLayer;
+    private LayerMask groundLayer, ceilingLayer;
 
     private Animator _animator;
     
@@ -29,6 +30,7 @@ public class CharacterMovement : MonoBehaviour
         jumping = false;
         crouching = false;
         groundLayer =  LayerMask.GetMask("Ground");
+        ceilingLayer =  LayerMask.GetMask("Ceiling");
         rb.freezeRotation = true;
         _animator = GetComponent<Animator>();
         playerCollider = GetComponent<BoxCollider2D>();
@@ -45,9 +47,55 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        RaycastHit2D hit =  Physics2D.Raycast(transform.position, Vector2.down, 1.8f, groundLayer);
+        RaycastHit2D hit =  Physics2D.Raycast(transform.position, Vector2.down, 1.8f);
         
-        Debug.DrawRay(transform.position, Vector2.down * 1.8f, Color.red);
+        // Debug.DrawRay(transform.position, Vector2.down * 1.8f, Color.red);
+        
+        if (hit && rb.linearVelocityY == 0)
+        {
+            jumping = false;
+            _animator.SetBool("Jumping", false);
+        }
+        else
+        {
+            jumping = true;
+            _animator.SetBool("Jumping", true);
+        }
+        
+        if (movement.y > 0 && !jumping && !crouching && !_animator.GetCurrentAnimatorStateInfo(0).IsName("Standing"))
+        {
+            rb.AddForceY(450);
+            _animator.Play("StartJump");
+        }
+
+        if (movement.y < 0 && !jumping && !crouching)
+        {
+            crouching = true;
+            _animator.Play("Crouching");
+            _animator.SetBool("Crouched", true);
+        }
+
+        if (crouching)
+        {
+            RaycastHit2D above = Physics2D.Raycast(transform.position - new Vector3(0, 0.8f, 0), Vector2.up, 0.2f, groundLayer);
+            
+            Debug.DrawRay(transform.position - new Vector3(0, 0.8f, 0), Vector2.down * 0.2f, Color.blue);
+
+            if (!above)
+            {
+                if (movement.y > 0)
+                {
+                    _animator.SetBool("Crouched", false);
+                    Move.Disable();
+                    _animator.Play("Standing");
+                    StartCoroutine(StandUp());
+                }
+                else
+                {
+                    crouching = true;
+                }
+            }
+        }
 
         if (crouching)
         {
@@ -59,33 +107,15 @@ public class CharacterMovement : MonoBehaviour
             playerCollider.size =  colliderSizeS;
             playerCollider.offset = colliderOffsetS;
         }
-        
 
-        if (hit && rb.linearVelocityY == 0)
-        {
-            jumping = false;
-        }
-        else
-        {
-            jumping = true;
-        }
 
-        if (movement.y > 0 && crouching)
+        if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("Crouching"))
         {
-            crouching = false;
+            if (!_animator.GetCurrentAnimatorStateInfo(0).IsName("Standing"))
+            {
+                transform.Translate(new Vector3(movement.x, 0, 0) *  Speed * Time.deltaTime);
+            }
         }
-        
-        if (movement.y > 0 && !jumping && !crouching)
-        {
-            rb.AddForceY(450);
-        }
-
-        if (movement.y < 0 && !jumping)
-        {
-            crouching = true;
-        }
-        
-        transform.Translate(new Vector3(movement.x, 0, 0) *  Speed * Time.deltaTime);
         
         if (movement.x < 0 && !facingRight)
         {
@@ -120,5 +150,12 @@ public class CharacterMovement : MonoBehaviour
         
         
 
+    }
+
+    IEnumerator StandUp()
+    {
+        yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length + 0.2f);
+        Move.Enable();
+        crouching = false;
     }
 }
