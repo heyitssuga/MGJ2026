@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] GameObject Tablet;
+    [SerializeField] GameObject Relic;
 
     [SerializeField] GameObject Portal;
 
@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        Tablet = GameObject.Find("tablet_piece");
+        Relic = GameObject.Find("Relic");
         Portal = GameObject.Find("Portal");
         if (Portal != null)
         {

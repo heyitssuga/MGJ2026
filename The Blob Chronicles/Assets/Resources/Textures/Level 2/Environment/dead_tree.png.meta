@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: ff7a5bb18c9d5e748a888b282c4d60eb
+guid: af415447756a92b4ca0c410137a019fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3784593593620177262
-    second: 2_sky_0
+      213: -333593121257757588
+    second: dead_tree_0
+  - first:
+      213: 1934570306879088676
+    second: dead_tree_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2_sky_0
+      name: dead_tree_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        y: 676
+        width: 5
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29edc01ad2c6a7bc0800000000000000
-      internalID: -3784593593620177262
+      spriteID: c64eaebd2d6de5bf0800000000000000
+      internalID: -333593121257757588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_tree_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 453
+        height: 922
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 428eb8eb179f8da10800000000000000
+      internalID: 1934570306879088676
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      2_sky_0: -3784593593620177262
+      dead_tree_0: -333593121257757588
+      dead_tree_1: 1934570306879088676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
