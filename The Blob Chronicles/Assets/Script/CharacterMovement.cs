@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
 
     private BoxCollider2D playerCollider;
 
+
     public int Speed;
 
     private Vector2 movement, colliderSizeS, colliderOffsetS, colliderSizeC, colliderOffsetC;
