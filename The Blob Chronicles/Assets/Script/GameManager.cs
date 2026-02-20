@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -44,12 +43,23 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "TitleScreen")
         {
             return;
         }
+        
+        if (scene.name == "CreditsScene") 
+        {
+            return;
+        }
+
 
         Relic = GameObject.Find("Relic");
         Portal = GameObject.Find("Portal");
